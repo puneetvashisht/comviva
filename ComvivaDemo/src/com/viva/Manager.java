@@ -22,8 +22,16 @@ public class Manager extends Employee{
 	@Override
 	public String toString() {
 		return "Manager [numberOfResources=" + numberOfResources + ", id=" + id + ", name=" + name + ", salary="
-				+ salary + "]";
+				+ salary + ", Address" + getAddress() + "]";
 	}
+
+//	@Override
+//	public String toString() {
+//		return "Manager [numberOfResources=" + numberOfResources + ", id=" + id + ", name=" + name + ", salary="
+//				+ salary + "]";
+//	}
+//	
+	
 	
 	
 
