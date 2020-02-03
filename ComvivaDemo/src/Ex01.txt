@@ -1,0 +1,7 @@
+Bicycle Class is extended by RoadBicyle & MountainBicycle
+speed
+
+speedUp
+brakeDown
+
+Array of Road & Mountain Bicycles & Test speed and brakedown methods
