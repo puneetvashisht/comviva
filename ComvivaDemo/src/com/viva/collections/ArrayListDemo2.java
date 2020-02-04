@@ -1,7 +1,7 @@
 package com.viva.collections;
 
-import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import com.viva.Employee;
@@ -51,7 +51,7 @@ public class ArrayListDemo2 {
 		
 		
 		
-		Set<Employee> employees = new HashSet<>();
+		Set<Employee> employees = new LinkedHashSet<>();
 		Employee e1 = new Employee(1, "Ravi", 34344.34);
 		Employee e2 = new Employee(2, "Priya", 44344.34);
 		Employee e3 = new Employee(3, "Amit", 34344.34);

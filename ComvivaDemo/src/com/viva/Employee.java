@@ -1,10 +1,10 @@
 package com.viva;
 
-public class Employee {
+public class Employee{
 	
 	Integer id;
 	String name;
-	double salary;
+	public Double salary;
 	private Address address;
 	
 	public Employee(){
@@ -62,7 +62,11 @@ public class Employee {
 			return false;
 		return true;
 	}
-	
+//	@Override
+//	public int compareTo(Employee o) {
+//		return this.name.compareTo(o.name);
+//	}
+//	
 	
 //	
 //	@Override
