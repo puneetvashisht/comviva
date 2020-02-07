@@ -1,0 +1,19 @@
+<!-- <form method="POST" action="dummyURL"> -->
+
+    <input type="text" placeholder="Enter user name"/>
+    <button id="userdata" type="button">Submit </button>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+    
+    $('#userdata').click(function(){
+        console.log('button clicked')
+        $.ajax({url: "http://localhost:8081/dummy.json", success: function(result){
+            console.log("Result", result)
+        }});
+    })
+    
+   
+    </script>
+<!-- </form> -->
