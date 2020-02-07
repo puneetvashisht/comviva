@@ -1,7 +1,9 @@
 <!-- <form method="POST" action="dummyURL"> -->
 
+    <p id="name"></p>
+    <p id="age"></p>
     <input type="text" placeholder="Enter user name"/>
-    <button id="userdata" type="button">Submit </button>
+    <button id="userdata" type="button">Load Data using AJAX </button>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -9,8 +11,11 @@
     
     $('#userdata').click(function(){
         console.log('button clicked')
-        $.ajax({url: "http://localhost:8081/dummy.json", success: function(result){
-            console.log("Result", result)
+        $.ajax({url: "http://localhost:8081/dummy.json", success: function(resp){
+            console.log("Result", resp)
+            console.log(resp.name);
+            $('#name').html(resp.name);
+            $('#age').html(resp.age);
         }});
     })
     

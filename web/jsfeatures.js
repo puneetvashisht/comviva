@@ -6,16 +6,28 @@ function sleep(millis)
     while(curDate-date < millis);
 }
 
-function process(){
+function process(fn){
 
     setTimeout(function(){
         sleep(3000)
         console.log('ASync function')
-        return 4;
+        console.log(fn)
+        fn(4)
     },1000);
     
 }
 
 console.log('start')
-process();
+
+// var result = process();
+
+process(function(result){ console.log('callback funtion: ', result)})
+// console.log(result)
 console.log('finished')
+
+
+
+// ajax(callback){
+//  // if response correct
+//  callback(response data);
+// }
