@@ -11,6 +11,9 @@ public class TestEmployee {
 		e1.setAddress(add1);
 		
 		Employee e2 = new Employee(2, "Priya", 44344.34, add2);
+		if(e2==null){
+			throw new EmployeeNotFoundException("Priya as employee not found");
+		}
 
 		System.out.println(e1);
 //		incrementSalary(e1, 5000);
