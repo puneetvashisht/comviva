@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Angular",
+        "summary" : "JS framework from Google!!"
+    },
+    {
+        "title": "React",
+        "summary" : "JS lib from Facebook!!"
+    },
+    {
+        "title": "Ember",
+        "summary" : "JS framework from Google!!"
+    },
+    {
+        "title": "CanJS",
+        "summary" : "JS framework from Google!!"
+    },
+    {
+        "title": "VueJS",
+        "summary" : "JS framework from Google!!"
+    }
+]

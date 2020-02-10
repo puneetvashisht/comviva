@@ -1,13 +1,19 @@
 <html>
 <head>
     <title>Some title</title>
-    
+     <style>
+         p {
+             border: 1px 2px;
+             border-color: black;
+             border-style: solid;
+         }
+     </style>
 </head>
 <body>
     <input type="number" id="oper1"/>
     <input type="number" id="oper2"/>
     <button onclick="add()" >Sum</button>
-    <p id="result"></p>
+    <p id="result">Result</p>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="calc.js"></script>
