@@ -17,8 +17,25 @@ public class Test {
 		
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:beans.xml");
-		A a = (A)context.getBean("a");
-		a.execute();
+		for( String beanName : context.getBeanDefinitionNames())
+		{
+			System.out.println(beanName);
+		}
+		
+//		A a = (A)context.getBean("a");
+//		a.execute();
+		
+//		PaymentService service = (PaymentService)context.getBean("paymentService");
+		PaymentService service = context.getBean(PaymentService.class);
+		service.execute();
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
