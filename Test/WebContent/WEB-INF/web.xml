@@ -9,13 +9,5 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <servlet-name>AnotherServlet</servlet-name>
-    <servlet-class>com.viva.AnotherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AnotherServlet</servlet-name>
-    <url-pattern>/another</url-pattern>
-  </servlet-mapping>
+
 </web-app>

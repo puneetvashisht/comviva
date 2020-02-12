@@ -9,6 +9,7 @@
 </head>
 <body>
 <h2>Display employees here</h2>
+<p><%=request.getAttribute("color") %></p>
 <% List<Employee> employees = (List<Employee>)request.getAttribute("emps"); %>
 
 <ul class="list-group">

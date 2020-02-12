@@ -15,7 +15,7 @@ public class EmployeeRepository {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 //			2. Get the connnection
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/appdb", "root", "rootroot");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/appdb?useSSL=false", "root", "rootroot");
 			
 		}
 		catch(Exception e){
