@@ -28,7 +28,7 @@
         <property name="hibernate.format_sql">true</property>
 
 		<mapping class="com.viva.Employee" />
-		
+		<mapping class="com.viva.Address" />
 	</session-factory>
 	
 	

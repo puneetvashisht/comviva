@@ -23,7 +23,8 @@ public class EmployeeRepo {
 		// Manual transactions
 		
 		Employee emp = session.get(Employee.class, id);
-		System.out.println(emp);
+//		System.out.println(emp);
+		System.out.println(emp.getAddresses());
 //		session.get(Employee.class, 1);
 		
 		//

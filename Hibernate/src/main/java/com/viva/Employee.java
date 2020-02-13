@@ -1,14 +1,22 @@
 package com.viva;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 @Entity
 @NamedQuery(name="selectEmployeesGreaterThanSalary", query="from Employee e where e.salary>:x")
+
 public class Employee {
 	
 	@Id
@@ -18,6 +26,10 @@ public class Employee {
 	double salary;
 	@Column(name="EMP_DEPT")
 	String department;
+	
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	List<Address> addresses;
 	
 	public Employee() {}
 	public Employee(String name, double salary) {
@@ -41,6 +53,17 @@ public class Employee {
 	}
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+	
+	
+	
+	
+	
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 	@Override
 	public String toString() {
