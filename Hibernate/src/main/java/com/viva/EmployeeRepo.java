@@ -1,6 +1,9 @@
 package com.viva;
 
+import java.util.List;
 import java.util.Set;
+
+import javax.persistence.Query;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -12,6 +15,22 @@ public class EmployeeRepo {
 
 	static {
 		sessionFactory = HibernateUtil.getSessionFactory();
+	}
+	
+	public Employee findEmployee(int id){
+		Session session = sessionFactory.openSession();
+
+		// Manual transactions
+		
+		Employee emp = session.get(Employee.class, id);
+		System.out.println(emp);
+//		session.get(Employee.class, 1);
+		
+		//
+
+//		tx.commit();
+		session.close();
+		return emp;
 	}
 
 	public void addEmployee(Employee emp) {
@@ -34,6 +53,47 @@ public class EmployeeRepo {
 	@Override
 	protected void finalize(){
 		HibernateUtil.closeSessionFactory();
+	}
+
+	public void incrementSalary(int i, double salary) {
+		// Physical connection to perform db operations
+				Session session = sessionFactory.openSession();
+
+				// Manual transactions
+				Transaction tx = session.beginTransaction();
+				Employee foundEmployee = session.get(Employee.class, i);
+				System.out.println(foundEmployee);
+				
+				
+//				session.get(Employee.class, 1);
+				
+				//
+
+				tx.commit();
+				session.close();
+				
+				
+				foundEmployee.setSalary(salary);
+		
+	}
+
+	public List<Employee> findAllEmployees() {
+		Session session = sessionFactory.openSession();
+		
+		Query query = session.createQuery("select e from Employee e", Employee.class);
+		List<Employee> employees = query.getResultList();
+		session.close();
+		return employees;
+	}
+	
+	public List<Employee> findAllEmployeesGreaterThanSalary(double salary) {
+		Session session = sessionFactory.openSession();
+		
+		Query query = session.createNamedQuery("selectEmployeesGreaterThanSalary", Employee.class);
+		query.setParameter("x", salary);
+		List<Employee> employees = query.getResultList();
+		session.close();
+		return employees;
 	}
 
 //	public Employee findEmployee(int id) {

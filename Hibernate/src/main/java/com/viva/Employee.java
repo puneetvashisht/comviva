@@ -1,11 +1,14 @@
 package com.viva;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name="selectEmployeesGreaterThanSalary", query="from Employee e where e.salary>:x")
 public class Employee {
 	
 	@Id
@@ -13,6 +16,8 @@ public class Employee {
 	int id;
 	String name;
 	double salary;
+	@Column(name="EMP_DEPT")
+	String department;
 	
 	public Employee() {}
 	public Employee(String name, double salary) {
