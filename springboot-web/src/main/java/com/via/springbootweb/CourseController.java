@@ -1,4 +1,4 @@
-package com.viva.controllers;
+package com.via.springbootweb;
 
 import java.util.List;
 
@@ -10,13 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.viva.entities.Course;
-import com.viva.repos.CourseRepo;
-
 @RestController
-
-
-
 @CrossOrigin("*")
 @RequestMapping(path="/api")
 public class CourseController {
@@ -27,19 +21,21 @@ public class CourseController {
 	
 	@RequestMapping(path="/courses" , method=RequestMethod.GET)
 	public List<Course> findAllCourses(){
-		List<Course> courses = courseRepo.findAllCourses();
+		List<Course> courses = courseRepo.findAll();
 		return courses;
 	}
 	
 	@RequestMapping(path="/courses/{id}" , method=RequestMethod.GET)
 	public Course findCourseById(@PathVariable("id") int id){
 //		List<Course> courses = courseRepo.findAllCourses();
-		return courseRepo.findCourse(id);
+//		return courseRepo.findCourse(id);
+//		return courseRepo.find
+		return null;
 	}
 	@RequestMapping(path="/courses" , method=RequestMethod.POST)
 	public void addCourse(@RequestBody Course course){
 		System.out.println(course);
-		courseRepo.addCourse(course);
+		courseRepo.save(course);
 	}
 
 }
