@@ -58,7 +58,7 @@
                 render(filteredList);
             })
 
-            $.getJSON("http://localhost:8082/spring-web-demo/api/courses/", function (result) {
+            $.getJSON("courses", function (result) {
                 console.log(result)
                 data = result;
                 render(result)

@@ -6,12 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.viva.entities.Course;
+import com.viva.repos.CourseRepo;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:beans.xml")
+@ContextConfiguration("classpath:spring-config.xml")
 public class TestEmployeeRepo {
 	@Autowired
 	EmployeeRepo repo;
-	@Test
+	
+	@Autowired
+	CourseRepo courseRepo;
+//	@Test
 	public void test() {
 		Employee emp = new Employee("Sahil", 34343.34);
 		try {
@@ -21,5 +27,11 @@ public class TestEmployeeRepo {
 			e.printStackTrace();
 		}
 	}
+	@Test
+	public void addCourse(){
+		Course course = new Course("Angular", "framework from google!!");
+		courseRepo.addCourse(course);
+	}
+	
 
 }
