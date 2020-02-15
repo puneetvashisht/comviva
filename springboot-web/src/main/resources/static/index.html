@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Courses View Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css" />
+</head>
+
+<body>
+
+    <h3>-- Add courses --</h3>
+    <div class="container">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Courses Title</span>
+            </div>
+            <input id="title" type="text" class="form-control" placeholder="Title" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Courses Summary</span>
+            </div>
+            <input id="summary" type="text" class="form-control" placeholder="Summary" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          
+            <button id="courseadd" class="btn btn-primary">Add Course</button>
+        </div>
+       
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+	$("#courseadd").click(()=>{
+		console.log($('#title').val())
+		var course = {title:$('#title').val(), summary:$('#summary').val() }
+		console.log(course);
+		
+		/* $.post("api/courses",
+				  course,
+				  function(data, status){
+				    alert("Data: " + data + "\nStatus: " + status);
+				  }); */
+		$.ajax({
+  		  url: 'api/courses',
+  		  method: 'POST',
+	  		dataType: 'json',
+	        contentType: 'application/json',
+  		  data: JSON.stringify(course)
+  		}).done(function() {
+  		 console.log('dcourse added!!')
+  		 alert('course added!!');
+  		}); 
+	})
+       
+    </script>
+</body>
+
+</html>

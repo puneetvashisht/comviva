@@ -22,6 +22,14 @@ public class Course {
 		this.title = title;
 		this.summary = summary;
 	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getTitle() {
 		return title;
 	}
