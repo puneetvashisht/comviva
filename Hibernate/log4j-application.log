@@ -1,0 +1,541 @@
+2020-02-19 11:49:41 DEBUG logging:110 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2020-02-19 11:49:42 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-02-19 11:49:42 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-02-19 11:49:42 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-02-19 11:49:42 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2020-02-19 11:49:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2020-02-19 11:49:43 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2020-02-19 11:49:43 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2020-02-19 11:49:43 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2020-02-19 11:49:43 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-02-19 11:49:44 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-02-19 11:49:44 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-02-19 11:49:44 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@1d119efb
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration boolean -> org.hibernate.type.BooleanType@1d119efb
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1d119efb
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4c9f8c13
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@be64738
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration yes_no -> org.hibernate.type.YesNoType@48e4374
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@418e7838
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration byte -> org.hibernate.type.ByteType@418e7838
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@418e7838
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration character -> org.hibernate.type.CharacterType@470f1802
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration char -> org.hibernate.type.CharacterType@470f1802
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@470f1802
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@72a7c7e0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration short -> org.hibernate.type.ShortType@72a7c7e0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@72a7c7e0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration integer -> org.hibernate.type.IntegerType@29626d54
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration int -> org.hibernate.type.IntegerType@29626d54
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@29626d54
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@4b0b0854
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration long -> org.hibernate.type.LongType@4b0b0854
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4b0b0854
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@67a20f67
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration float -> org.hibernate.type.FloatType@67a20f67
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@67a20f67
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@9225652
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration double -> org.hibernate.type.DoubleType@9225652
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@9225652
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@63355449
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@63355449
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@21de60b4
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@21de60b4
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration string -> org.hibernate.type.StringType@5c30a9b0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.String -> org.hibernate.type.StringType@5c30a9b0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7a69b07
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@636be97c
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration url -> org.hibernate.type.UrlType@31368b99
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@31368b99
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration Duration -> org.hibernate.type.DurationType@76508ed1
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@76508ed1
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration Instant -> org.hibernate.type.InstantType@2ef3eef9
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2ef3eef9
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@16ec5519
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@16ec5519
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5119fb47
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5119fb47
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7714e963
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7714e963
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@55b7a4e0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@55b7a4e0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6973b51b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6973b51b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1d9b7cce
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1d9b7cce
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration date -> org.hibernate.type.DateType@1a451d4d
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1a451d4d
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration time -> org.hibernate.type.TimeType@5e0826e7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5e0826e7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration timestamp -> org.hibernate.type.TimestampType@3ce1e309
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3ce1e309
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3ce1e309
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@74e52303
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration calendar -> org.hibernate.type.CalendarType@5af3afd9
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5af3afd9
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5af3afd9
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@694abbdc
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration locale -> org.hibernate.type.LocaleType@4f18837a
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4f18837a
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration currency -> org.hibernate.type.CurrencyType@a514af7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@a514af7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@79924b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@79924b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration class -> org.hibernate.type.ClassType@294425a7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@294425a7
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@59309333
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@59309333
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5b239d7d
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration binary -> org.hibernate.type.BinaryType@52bf72b5
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration byte[] -> org.hibernate.type.BinaryType@52bf72b5
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration [B -> org.hibernate.type.BinaryType@52bf72b5
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6c64cb25
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6c64cb25
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6c64cb25
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration row_version -> org.hibernate.type.RowVersionType@5158b42f
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration image -> org.hibernate.type.ImageType@2d7275fc
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration characters -> org.hibernate.type.CharArrayType@3a93b025
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration char[] -> org.hibernate.type.CharArrayType@3a93b025
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration [C -> org.hibernate.type.CharArrayType@3a93b025
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@564fabc8
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@564fabc8
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@564fabc8
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration text -> org.hibernate.type.TextType@1d2adfbe
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration ntext -> org.hibernate.type.NTextType@8f4ea7c
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration blob -> org.hibernate.type.BlobType@77847718
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@77847718
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2b662a77
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration clob -> org.hibernate.type.ClobType@4ec4f3a0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4ec4f3a0
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration nclob -> org.hibernate.type.NClobType@59662a0b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@59662a0b
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1a482e36
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2f9f7dcf
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration serializable -> org.hibernate.type.SerializableType@7d8995e
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration object -> org.hibernate.type.ObjectType@55b699ef
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@55b699ef
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@18078bef
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@799f10e1
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4c371370
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@145f66e3
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3023df74
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@313ac989
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4562e04d
+2020-02-19 11:49:44 DEBUG BasicTypeRegistry:156 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@2a65fe7c
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-02-19 11:49:44 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-02-19 11:49:44 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-02-19 11:49:44 INFO  pooling:129 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/appdb]
+2020-02-19 11:49:44 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=rootroot}
+2020-02-19 11:49:44 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2020-02-19 11:49:44 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2020-02-19 11:49:44 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-02-19 11:49:46 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 8.0.11
+      major : 8
+      minor : 0
+2020-02-19 11:49:46 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.11 (Revision: 6d4eaa273bc181b4cf1c8ad0821a2227f116fedf)
+      major : 8
+      minor : 0
+2020-02-19 11:49:46 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2020-02-19 11:49:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-19 11:49:46 DEBUG IdentifierHelperBuilder:117 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2020-02-19 11:49:46 DEBUG IdentifierHelperBuilder:191 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2020-02-19 11:49:46 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-02-19 11:49:46 DEBUG TypeConfiguration$Scope:141 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@9573584] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3370f42]
+2020-02-19 11:49:46 DEBUG AnnotationBinder:549 - Binding entity from annotated class: com.viva.Employee
+2020-02-19 11:49:46 DEBUG QueryBinder:80 - Binding named query: selectEmployeesGreaterThanSalary => from Employee e where e.salary>:x
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-02-19 11:49:46 DEBUG EntityBinder:430 - Import with entity name Employee
+2020-02-19 11:49:46 DEBUG EntityBinder:873 - Bind entity com.viva.Employee on table Employee
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Employee:id]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property id
+2020-02-19 11:49:46 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=addresses, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=addresses_KEY, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='addresses_KEY', referencedColumn='null', mappedBy='null'}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-02-19 11:49:46 DEBUG CollectionBinder:389 - Collection role: com.viva.Employee.addresses
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property addresses
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=EMP_DEPT, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property department with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Employee:department]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for department
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property department
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property name with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Employee:name]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property name
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=salary, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property salary with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Employee:salary]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for salary
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property salary
+2020-02-19 11:49:46 DEBUG AnnotationBinder:549 - Binding entity from annotated class: com.viva.Address
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-02-19 11:49:46 DEBUG EntityBinder:430 - Import with entity name Address
+2020-02-19 11:49:46 DEBUG EntityBinder:873 - Bind entity com.viva.Address on table Address
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Address), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Address:id]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property id
+2020-02-19 11:49:46 DEBUG BinderHelper:644 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Address), mappingColumn=city, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property city with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Address:city]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for city
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property city
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Address), mappingColumn=country, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property country with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Address:country]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for country
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property country
+2020-02-19 11:49:46 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Address), mappingColumn=houseNumber, insertable=true, updatable=true, unique=false}
+2020-02-19 11:49:46 DEBUG PropertyBinder:175 - MetadataSourceProcessor property houseNumber with lazy=false
+2020-02-19 11:49:46 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.viva.Address:houseNumber]
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:411 - building SimpleValue for houseNumber
+2020-02-19 11:49:46 DEBUG PropertyBinder:266 - Building property houseNumber
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for department
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for salary
+2020-02-19 11:49:46 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2020-02-19 11:49:47 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for city
+2020-02-19 11:49:47 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for country
+2020-02-19 11:49:47 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for houseNumber
+2020-02-19 11:49:47 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [employee]
+2020-02-19 11:49:47 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [address]
+2020-02-19 11:49:47 DEBUG CollectionSecondPass:51 - Second pass for collection: com.viva.Employee.addresses
+2020-02-19 11:49:47 DEBUG CollectionBinder:1239 - Binding a OneToMany: com.viva.Employee.addresses through an association table
+2020-02-19 11:49:47 DEBUG CollectionSecondPass:68 - Mapped collection key: Employee_id, element: addresses_id
+2020-02-19 11:49:47 DEBUG InFlightMetadataCollectorImpl:1873 - Resolving reference to class: com.viva.Address
+2020-02-19 11:49:47 DEBUG InFlightMetadataCollectorImpl:1873 - Resolving reference to class: com.viva.Employee
+2020-02-19 11:49:47 DEBUG InFlightMetadataCollectorImpl:1873 - Resolving reference to class: com.viva.Address
+2020-02-19 11:49:47 DEBUG InFlightMetadataCollectorImpl:1873 - Resolving reference to class: com.viva.Employee
+2020-02-19 11:49:47 DEBUG SessionFactoryImpl:197 - Building session factory
+2020-02-19 11:49:47 DEBUG Settings:70 - SessionFactory name : null
+2020-02-19 11:49:47 DEBUG Settings:71 - Automatic flush during beforeCompletion(): enabled
+2020-02-19 11:49:47 DEBUG Settings:72 - Automatic session close at end of transaction: disabled
+2020-02-19 11:49:47 DEBUG Settings:74 - Statistics: disabled
+2020-02-19 11:49:47 DEBUG Settings:76 - Deleted entity synthetic identifier rollback: disabled
+2020-02-19 11:49:47 DEBUG Settings:77 - Default entity-mode: pojo
+2020-02-19 11:49:47 DEBUG Settings:78 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-02-19 11:49:47 DEBUG Settings:79 - Allow initialization of lazy state outside session : disabled
+2020-02-19 11:49:47 DEBUG Settings:81 - Using BatchFetchStyle : LEGACY
+2020-02-19 11:49:47 DEBUG Settings:82 - Default batch fetch size: -1
+2020-02-19 11:49:47 DEBUG Settings:83 - Maximum outer join fetch depth: 2
+2020-02-19 11:49:47 DEBUG Settings:84 - Default null ordering: NONE
+2020-02-19 11:49:47 DEBUG Settings:85 - Order SQL updates by primary key: disabled
+2020-02-19 11:49:47 DEBUG Settings:86 - Order SQL inserts for batching: disabled
+2020-02-19 11:49:47 DEBUG Settings:88 - multi-tenancy strategy : NONE
+2020-02-19 11:49:47 DEBUG Settings:90 - JTA Track by Thread: enabled
+2020-02-19 11:49:47 DEBUG Settings:92 - Query language substitutions: {}
+2020-02-19 11:49:47 DEBUG Settings:93 - Named query checking : enabled
+2020-02-19 11:49:47 DEBUG Settings:95 - Second-level cache: disabled
+2020-02-19 11:49:47 DEBUG Settings:96 - Second-level query cache: disabled
+2020-02-19 11:49:47 DEBUG Settings:97 - Second-level query cache factory: null
+2020-02-19 11:49:47 DEBUG Settings:98 - Second-level cache region prefix: null
+2020-02-19 11:49:47 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+2020-02-19 11:49:47 DEBUG Settings:100 - Structured second-level cache entries: disabled
+2020-02-19 11:49:47 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+2020-02-19 11:49:47 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+2020-02-19 11:49:47 DEBUG Settings:104 - JDBC batch size: 15
+2020-02-19 11:49:47 DEBUG Settings:105 - JDBC batch updates for versioned data: enabled
+2020-02-19 11:49:47 DEBUG Settings:106 - Scrollable result sets: enabled
+2020-02-19 11:49:47 DEBUG Settings:107 - Wrap result sets: disabled
+2020-02-19 11:49:47 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): enabled
+2020-02-19 11:49:47 DEBUG Settings:109 - JDBC result set fetch size: null
+2020-02-19 11:49:47 DEBUG Settings:110 - Connection release mode: AFTER_TRANSACTION
+2020-02-19 11:49:47 DEBUG Settings:111 - Generate SQL with comments: disabled
+2020-02-19 11:49:47 DEBUG Settings:113 - JPA compliance - query : 
+2020-02-19 11:49:47 DEBUG Settings:114 - JPA compliance - closed-handling : 
+2020-02-19 11:49:47 DEBUG Settings:115 - JPA compliance - lists : 
+2020-02-19 11:49:47 DEBUG Settings:116 - JPA compliance - transactions : 
+2020-02-19 11:49:47 DEBUG SessionFactoryImpl:252 - Session factory constructed with filter configurations : {}
+2020-02-19 11:49:47 DEBUG SessionFactoryImpl:253 - Instantiating session factory with properties: {gopherProxySet=false, hibernate.format_sql=true, awt.toolkit=sun.lwawt.macosx.LWCToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=/Users/puneetvashisht/work/trainings/comviva/Hibernate/target/test-classes:/Users/puneetvashisht/work/trainings/comviva/Hibernate/target/classes:/Users/puneetvashisht/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/Users/puneetvashisht/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/Users/puneetvashisht/.m2/repository/org/hibernate/hibernate-core/5.3.1.Final/hibernate-core-5.3.1.Final.jar:/Users/puneetvashisht/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/puneetvashisht/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/puneetvashisht/.m2/repository/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar:/Users/puneetvashisht/.m2/repository/net/bytebuddy/byte-buddy/1.8.12/byte-buddy-1.8.12.jar:/Users/puneetvashisht/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/puneetvashisht/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/puneetvashisht/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/Users/puneetvashisht/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/puneetvashisht/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/puneetvashisht/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.3.Final/hibernate-commons-annotations-5.0.3.Final.jar:/Users/puneetvashisht/.m2/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar:/Users/puneetvashisht/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar:/Users/puneetvashisht/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/puneetvashisht/eclipse/jee-neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/387/0/.cp/:/Users/puneetvashisht/eclipse/jee-neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/386/0/.cp/, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=update, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Kolkata, user.country.format=IN, os.name=Mac OS X, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 54231 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.viva.TestEmployeeRepo, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.endian=little, user.home=/Users/puneetvashisht, user.language=en, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_101-b13, user.name=puneetvashisht, path.separator=:, hibernate.connection.username=****, os.version=10.15.1, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/appdb, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/pp/0stdpsvj1n16sc84yhk4v4l40000gn/T/, java.version=1.8.0_101, user.dir=/Users/puneetvashisht/work/trainings/comviva/Hibernate, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@62fe6067, java.library.path=/Users/puneetvashisht/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.101-b13, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=/Users/puneetvashisht/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.io.unicode.encoding=UnicodeBig, java.class.version=52.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16}
+2020-02-19 11:49:47 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+2020-02-19 11:49:47 DEBUG SessionFactoryImpl:292 - Instantiated session factory
+2020-02-19 11:49:47 DEBUG TypeConfiguration$Scope:146 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@9573584] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@2e54db99]
+2020-02-19 11:49:47 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.viva.Address] is safe
+2020-02-19 11:49:47 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.viva.Address
+2020-02-19 11:49:47 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.viva.Address] is safe
+2020-02-19 11:49:47 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.viva.Address
+2020-02-19 11:49:48 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.viva.Employee] is safe
+2020-02-19 11:49:48 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.viva.Employee
+2020-02-19 11:49:48 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.viva.Employee] is safe
+2020-02-19 11:49:48 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.viva.Employee
+2020-02-19 11:49:48 DEBUG AbstractCollectionPersister:673 - Static SQL for collection: com.viva.Employee.addresses
+2020-02-19 11:49:48 DEBUG AbstractCollectionPersister:675 -  Row insert: insert into Employee_Address (Employee_id, addresses_id) values (?, ?)
+2020-02-19 11:49:48 DEBUG AbstractCollectionPersister:678 -  Row update: update Employee_Address set addresses_id=? where Employee_id=? and addresses_id=?
+2020-02-19 11:49:48 DEBUG AbstractCollectionPersister:681 -  Row delete: delete from Employee_Address where Employee_id=? and addresses_id=?
+2020-02-19 11:49:48 DEBUG AbstractCollectionPersister:684 -  One-shot delete: delete from Employee_Address where Employee_id=?
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:3746 - Static SQL for entity: com.viva.Address
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:3751 -  Version select: select id from Address where id =?
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:3754 -  Snapshot select: select address_.id, address_.city as city2_0_, address_.country as country3_0_, address_.houseNumber as houseNum4_0_ from Address address_ where address_.id=?
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Address (city, country, houseNumber, id) values (?, ?, ?, ?)
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:394 -  Update 0: update Address set city=?, country=?, houseNumber=? where id=?
+2020-02-19 11:49:48 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Address where id=?
+2020-02-19 11:49:48 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4ad4936c]
+2020-02-19 11:49:48 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : city
+2020-02-19 11:49:48 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : country
+2020-02-19 11:49:48 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : houseNumber
+2020-02-19 11:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2020-02-19 11:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2020-02-19 11:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.viva.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.viva.Address, querySpaceUid=<gen:0>, path=com.viva.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.viva.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-02-19 11:49:49 DEBUG EntityLoader:137 - Static select for entity com.viva.Address [NONE]: select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.houseNumber as houseNum4_0_0_ from Address address0_ where address0_.id=?
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@383f3558]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : city
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : country
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : houseNumber
+2020-02-19 11:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2020-02-19 11:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2020-02-19 11:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.viva.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.viva.Address, querySpaceUid=<gen:0>, path=com.viva.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.viva.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-02-19 11:49:49 DEBUG EntityLoader:137 - Static select for entity com.viva.Address [READ]: select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.houseNumber as houseNum4_0_0_ from Address address0_ where address0_.id=?
+2020-02-19 11:49:49 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity com.viva.Address: select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.houseNumber as houseNum4_0_0_ from Address address0_ where address0_.id=?
+2020-02-19 11:49:49 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity com.viva.Address: select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.houseNumber as houseNum4_0_0_ from Address address0_ where address0_.id=?
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:3746 - Static SQL for entity: com.viva.Employee
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:3751 -  Version select: select id from Employee where id =?
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:3754 -  Snapshot select: select employee_.id, employee_.EMP_DEPT as EMP_DEPT2_1_, employee_.name as name3_1_, employee_.salary as salary4_1_ from Employee employee_ where employee_.id=?
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Employee (EMP_DEPT, name, salary, id) values (?, ?, ?, ?)
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:394 -  Update 0: update Employee set EMP_DEPT=?, name=?, salary=? where id=?
+2020-02-19 11:49:49 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Employee where id=?
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e93f3d5]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : addresses
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@19f040ba]
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3044e9c7]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : department
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : name
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : salary
+2020-02-19 11:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2020-02-19 11:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2020-02-19 11:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.viva.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.viva.Employee, querySpaceUid=<gen:0>, path=com.viva.Employee)
+          - CollectionAttributeFetchImpl(collection=com.viva.Employee.addresses, querySpaceUid=<gen:1>, path=com.viva.Employee.addresses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.viva.Address, querySpaceUid=<gen:2>, path=com.viva.Employee.addresses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.viva.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-02-19 11:49:49 DEBUG EntityLoader:137 - Static select for entity com.viva.Employee [NONE]: select employee0_.id as id1_1_0_, employee0_.EMP_DEPT as EMP_DEPT2_1_0_, employee0_.name as name3_1_0_, employee0_.salary as salary4_1_0_ from Employee employee0_ where employee0_.id=?
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a183d02]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : addresses
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@213deac2]
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23eee4b8]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : department
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : name
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : salary
+2020-02-19 11:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2020-02-19 11:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2020-02-19 11:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.viva.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.viva.Employee, querySpaceUid=<gen:0>, path=com.viva.Employee)
+          - CollectionAttributeFetchImpl(collection=com.viva.Employee.addresses, querySpaceUid=<gen:1>, path=com.viva.Employee.addresses)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.viva.Address, querySpaceUid=<gen:2>, path=com.viva.Employee.addresses.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.viva.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-02-19 11:49:49 DEBUG EntityLoader:137 - Static select for entity com.viva.Employee [READ]: select employee0_.id as id1_1_0_, employee0_.EMP_DEPT as EMP_DEPT2_1_0_, employee0_.name as name3_1_0_, employee0_.salary as salary4_1_0_ from Employee employee0_ where employee0_.id=?
+2020-02-19 11:49:49 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity com.viva.Employee: select employee0_.id as id1_1_1_, employee0_.EMP_DEPT as EMP_DEPT2_1_1_, employee0_.name as name3_1_1_, employee0_.salary as salary4_1_1_, addresses1_.Employee_id as Employee1_2_3_, address2_.id as addresse2_2_3_, address2_.id as id1_0_0_, address2_.city as city2_0_0_, address2_.country as country3_0_0_, address2_.houseNumber as houseNum4_0_0_ from Employee employee0_ left outer join Employee_Address addresses1_ on employee0_.id=addresses1_.Employee_id left outer join Address address2_ on addresses1_.addresses_id=address2_.id where employee0_.id=?
+2020-02-19 11:49:49 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity com.viva.Employee: select employee0_.id as id1_1_1_, employee0_.EMP_DEPT as EMP_DEPT2_1_1_, employee0_.name as name3_1_1_, employee0_.salary as salary4_1_1_, addresses1_.Employee_id as Employee1_2_3_, address2_.id as addresse2_2_3_, address2_.id as id1_0_0_, address2_.city as city2_0_0_, address2_.country as country3_0_0_, address2_.houseNumber as houseNum4_0_0_ from Employee employee0_ left outer join Employee_Address addresses1_ on employee0_.id=addresses1_.Employee_id left outer join Address address2_ on addresses1_.addresses_id=address2_.id where employee0_.id=?
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@29f0802c]
+2020-02-19 11:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a60c416]
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : city
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : country
+2020-02-19 11:49:49 DEBUG MetamodelGraphWalker:139 - Visiting attribute path : houseNumber
+2020-02-19 11:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2020-02-19 11:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2020-02-19 11:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=com.viva.Employee.addresses)
+    - Returns
+       - CollectionReturnImpl(collection=com.viva.Employee.addresses, querySpaceUid=<gen:0>, path=[com.viva.Employee.addresses])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.viva.Address, querySpaceUid=<gen:1>, path=[com.viva.Employee.addresses].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.viva.Employee.addresses)
+          - SQL table alias mapping - addresses0_
+          - alias suffix - 0_
+          - suffixed key columns - {Employee1_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.viva.Address)
+                - SQL table alias mapping - address1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+2020-02-19 11:49:49 DEBUG CollectionLoader:83 - Static select for collection com.viva.Employee.addresses: select addresses0_.Employee_id as Employee1_2_0_, addresses0_.addresses_id as addresse2_2_0_, address1_.id as id1_0_1_, address1_.city as city2_0_1_, address1_.country as country3_0_1_, address1_.houseNumber as houseNum4_0_1_ from Employee_Address addresses0_ inner join Address address1_ on addresses0_.addresses_id=address1_.id where addresses0_.Employee_id=?
+2020-02-19 11:49:49 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37a64f9d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-02-19 11:49:49 DEBUG Table:528 - No alter strings for table : Address
+2020-02-19 11:49:49 DEBUG Table:528 - No alter strings for table : Employee
+2020-02-19 11:49:49 DEBUG Table:528 - No alter strings for table : Employee_Address
+2020-02-19 11:49:49 DEBUG Table:528 - No alter strings for table : hibernate_sequence
+2020-02-19 11:49:49 DEBUG SQL:94 - 
+    
+    alter table Employee_Address 
+       add constraint FKp5vawu9u8kpxklqhm5fcpf3x3 
+       foreign key (addresses_id) 
+       references Address (id)
+2020-02-19 11:49:49 DEBUG SQL:94 - 
+    
+    alter table Employee_Address 
+       add constraint FKok9vrqbkqhea6e26nlqaedbqd 
+       foreign key (Employee_id) 
+       references Employee (id)
+2020-02-19 11:49:49 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+2020-02-19 11:49:49 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2020-02-19 11:49:49 DEBUG StandardJtaPlatformResolver:110 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-19 11:49:49 DEBUG NamedQueryRepository:151 - Checking 1 named HQL queries
+2020-02-19 11:49:49 DEBUG NamedQueryRepository:155 - Checking named query: selectEmployeesGreaterThanSalary
+2020-02-19 11:49:49 DEBUG QueryTranslatorFactoryInitiator:45 - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@27aae97b
+2020-02-19 11:49:49 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2020-02-19 11:49:49 DEBUG QueryTranslatorImpl:287 - parse() - HQL: from com.viva.Employee e where e.salary>:x
+2020-02-19 11:49:49 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2020-02-19 11:49:49 DEBUG QueryTranslatorImpl:308 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[IDENT] Node: 'com'
+    |        |  |  \-[IDENT] Node: 'viva'
+    |        |  \-[IDENT] Node: 'Employee'
+    |        \-[ALIAS] Node: 'e'
+    \-[WHERE] Node: 'where'
+       \-[GT] Node: '>'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'e'
+          |  \-[IDENT] Node: 'salary'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'x'
+
+2020-02-19 11:49:49 DEBUG HqlSqlBaseWalker:124 - select << begin [level=1, statement=select]
+2020-02-19 11:49:49 DEBUG FromElement:146 - FromClause{level=1} : com.viva.Employee (e) -> employee0_
+2020-02-19 11:49:49 DEBUG FromReferenceNode:60 - Resolved : e -> employee0_.id
+2020-02-19 11:49:49 DEBUG DotNode:688 - getDataType() : salary -> org.hibernate.type.DoubleType@9225652
+2020-02-19 11:49:49 DEBUG FromReferenceNode:60 - Resolved : e.salary -> employee0_.salary
+2020-02-19 11:49:49 DEBUG HqlSqlBaseWalker:128 - select : finishing up [level=1, statement=select]
+2020-02-19 11:49:49 DEBUG HqlSqlWalker:752 - processQuery() :  ( SELECT ( FromClause{level=1} Employee employee0_ ) ( where ( > ( employee0_.salary employee0_.id salary ) ? ) ) )
+2020-02-19 11:49:49 DEBUG HqlSqlWalker:1028 - Derived SELECT clause created.
+2020-02-19 11:49:49 DEBUG JoinProcessor:192 - Using FROM fragment [Employee employee0_]
+2020-02-19 11:49:49 DEBUG HqlSqlBaseWalker:132 - select >> end [level=1, statement=select]
+2020-02-19 11:49:49 DEBUG QueryTranslatorImpl:274 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Employee)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'employee0_.id as id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=e,role=null,tableName=Employee,tableAlias=employee0_,origin=null,columns={,className=com.viva.Employee}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'employee0_.EMP_DEPT as EMP_DEPT2_1_, employee0_.name as name3_1_, employee0_.salary as salary4_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[e], fromElementByTableAlias=[employee0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Employee employee0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=e,role=null,tableName=Employee,tableAlias=employee0_,origin=null,columns={,className=com.viva.Employee}}
+    \-[WHERE] SqlNode: 'where'
+       \-[GT] BinaryLogicOperatorNode: '>'
+          +-[DOT] DotNode: 'employee0_.salary' {propertyName=salary,dereferenceType=PRIMITIVE,getPropertyPath=salary,path=e.salary,tableAlias=employee0_,className=com.viva.Employee,classAlias=e}
+          |  +-[ALIAS_REF] IdentNode: 'employee0_.id' {alias=e, className=com.viva.Employee, tableAlias=employee0_}
+          |  \-[IDENT] IdentNode: 'salary' {originalText=salary}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=x, expectedType=org.hibernate.type.DoubleType@9225652}
+
+2020-02-19 11:49:49 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2020-02-19 11:49:50 DEBUG QueryTranslatorImpl:253 - HQL: from com.viva.Employee e where e.salary>:x
+2020-02-19 11:49:50 DEBUG QueryTranslatorImpl:254 - SQL: select employee0_.id as id1_1_, employee0_.EMP_DEPT as EMP_DEPT2_1_, employee0_.name as name3_1_, employee0_.salary as salary4_1_ from Employee employee0_ where employee0_.salary>?
+2020-02-19 11:49:50 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2020-02-19 11:49:50 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+2020-02-19 11:49:50 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@35d3ab60
+2020-02-19 11:49:50 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: aabda2a2-eaf9-4897-9709-ae3e305f4deb (<unnamed>)
+2020-02-19 11:49:50 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+2020-02-19 11:49:50 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2020-02-19 11:49:50 DEBUG SQL:94 - 
+    select
+        employee0_.id as id1_1_0_,
+        employee0_.EMP_DEPT as EMP_DEPT2_1_0_,
+        employee0_.name as name3_1_0_,
+        employee0_.salary as salary4_1_0_ 
+    from
+        Employee employee0_ 
+    where
+        employee0_.id=?
+2020-02-19 11:49:50 DEBUG ResultSetProcessorImpl:120 - Starting ResultSet row #0
+2020-02-19 11:49:50 DEBUG EntityReferenceInitializerImpl:126 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:145 - Resolving associations for [com.viva.Employee#1]
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:290 - Done materializing entity [com.viva.Employee#1]
+2020-02-19 11:49:50 DEBUG ResourceRegistryStandardImpl:84 - HHH000387: ResultSet's statement was not registered
+2020-02-19 11:49:50 DEBUG AbstractLoadPlanBasedEntityLoader:207 - Done entity load : com.viva.Employee#1
+2020-02-19 11:49:50 DEBUG LogicalConnectionManagedImpl:161 - Initiating JDBC connection release from afterTransaction
+2020-02-19 11:49:50 INFO  EmployeeRepo:32 - Employee [id=1, name=Priya, salary=34343.34]
+2020-02-19 11:49:50 WARN  EmployeeRepo:33 - some issue happens..
+2020-02-19 11:49:50 DEBUG AbstractLoadPlanBasedCollectionInitializer:73 - Loading collection: [com.viva.Employee.addresses#1]
+2020-02-19 11:49:50 DEBUG SQL:94 - 
+    select
+        addresses0_.Employee_id as Employee1_2_0_,
+        addresses0_.addresses_id as addresse2_2_0_,
+        address1_.id as id1_0_1_,
+        address1_.city as city2_0_1_,
+        address1_.country as country3_0_1_,
+        address1_.houseNumber as houseNum4_0_1_ 
+    from
+        Employee_Address addresses0_ 
+    inner join
+        Address address1_ 
+            on addresses0_.addresses_id=address1_.id 
+    where
+        addresses0_.Employee_id=?
+2020-02-19 11:49:50 DEBUG ResultSetProcessorImpl:161 - Preparing collection intializer : [com.viva.Employee.addresses#1]
+2020-02-19 11:49:50 DEBUG ResultSetProcessorImpl:120 - Starting ResultSet row #0
+2020-02-19 11:49:50 DEBUG CollectionReferenceInitializerImpl:59 - Found row of collection: [com.viva.Employee.addresses#1]
+2020-02-19 11:49:50 DEBUG ResultSetProcessorImpl:120 - Starting ResultSet row #1
+2020-02-19 11:49:50 DEBUG CollectionReferenceInitializerImpl:59 - Found row of collection: [com.viva.Employee.addresses#1]
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:145 - Resolving associations for [com.viva.Address#2]
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:290 - Done materializing entity [com.viva.Address#2]
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:145 - Resolving associations for [com.viva.Address#3]
+2020-02-19 11:49:50 DEBUG TwoPhaseLoad:290 - Done materializing entity [com.viva.Address#3]
+2020-02-19 11:49:50 DEBUG CollectionLoadContext:394 - 1 collections were found in result set for role: com.viva.Employee.addresses
+2020-02-19 11:49:50 DEBUG CollectionLoadContext:291 - Collection fully initialized: [com.viva.Employee.addresses#1]
+2020-02-19 11:49:50 DEBUG CollectionLoadContext:394 - 1 collections initialized for role: com.viva.Employee.addresses
+2020-02-19 11:49:50 DEBUG ResourceRegistryStandardImpl:84 - HHH000387: ResultSet's statement was not registered
+2020-02-19 11:49:50 DEBUG AbstractLoadPlanBasedCollectionInitializer:105 - Done loading collection
+2020-02-19 11:49:50 INFO  EmployeeRepo:36 - [Address [houseNumber=23, city=GK, country=DElhi], Address [houseNumber=2, city=Sector 59, country=Gurgaon]]
+2020-02-19 11:54:49 ERROR EmployeeRepo:44 - testing logs

@@ -3,14 +3,19 @@ package com.viva;
 import java.util.List;
 import java.util.Set;
 
+
 import javax.persistence.Query;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 
 public class EmployeeRepo {
+	
+	Logger logger = Logger.getLogger(this.getClass().getName());
+	
 	static SessionFactory sessionFactory;
 
 	static {
@@ -24,10 +29,20 @@ public class EmployeeRepo {
 		
 		Employee emp = session.get(Employee.class, id);
 //		System.out.println(emp);
-		System.out.println(emp.getAddresses());
+		logger.info(emp);
+		logger.warn("some issue happens..", null);
+		
+//		System.out.println(emp.getAddresses());
+		logger.info(emp.getAddresses());
 //		session.get(Employee.class, 1);
 		
 		//
+		try{
+			throw new RuntimeException("testing logs");
+		}
+		catch (RuntimeException re){
+			logger.error(re.getMessage());
+		}
 
 //		tx.commit();
 		session.close();
